@@ -1,0 +1,28 @@
+ int scores[5];
+    int total = 0;
+    float average;
+
+    printf("Enter the First scores:\n");
+    scanf("%d",&scores[0]);
+
+    printf("Enter the Second scores:\n");
+    scanf("%d",&scores[1]);
+
+    printf("Enter the third scores:\n");
+    scanf("%d",&scores[2]);
+
+    printf("Enter the Fourth scores:\n");
+    scanf("%d",&scores[3]);
+
+    printf("Enter the Fifth scores:\n");
+    scanf("%d",&scores[4]);
+
+   for(int i = 0; i <5; i++){
+    total += scores[i];
+   }
+    average = total/5.0;
+
+    printf("The average score is: %.1f\n", average);
+    return 0;
+
+}
